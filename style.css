@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Cursed Timer';
+  src: url('font/CursedTimerUlil-Aznm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    color : #EEEEEE;
+    font-size: 8rem;
+}
+
+.scorebox {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scorebox > p {
+    font-family: 'cursed timer', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10rem;
+    color: #F94F6D;
+    margin: 0;
+}
+
+button {
+    border: solid 3px #9AABD8;
+    border-radius: 5px;
+    background-color: #1B244A;
+    color: #9AABD8;
+    padding: 2rem;
+    font-size: 5rem;
+    font-family: 'Cursed Timer', Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.scorebuttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+#reset {
+    display: flex;
+    align-self: center;
+}
