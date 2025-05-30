@@ -69,7 +69,20 @@ button {
     margin-top: 5rem;
 }
 
+#reset-endmatch {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 #reset {
     display: flex;
     align-self: center;
+    margin-bottom: 2rem;
+}
+
+#endmatch {
+    color: #F94F6D;
+    border: solid 3px #F94F6D;
 }

@@ -2,9 +2,16 @@
 let score1 = 0;
 let score2 = 0;
 
+const ALERT_MESSAGES = {
+    homeWin: "Home team wins!",
+    guestWin: "Guest team wins!",
+    tie: "It's a tie!"
+};
+
 let homeScore = document.getElementById("homescore");
 let guestScore = document.getElementById("guestscore");
-let resetButton = document.getElementById("reset");
+let resetBtn = document.getElementById("reset");
+let endmatch = document.getElementById("endmatch");
 
 document.getElementById("home1").addEventListener("click", function homescore1() {
     score1 += 1;
@@ -32,9 +39,22 @@ document.getElementById("guest3").addEventListener("click", function guesscoret3
     guestScore.textContent = score2;
 });
 
-resetButton.addEventListener("click", function reset() {
+function reset() {
     score1 = 0;
     score2 = 0;
     homeScore.textContent = score1;
     guestScore.textContent = score2;
+}
+
+resetBtn.addEventListener("click", reset);
+
+endmatch.addEventListener("click", function endMatch() {
+    if (score1 > score2) {
+        alert(ALERT_MESSAGES.homeWin);
+    } else if (score2 > score1) {
+        alert(ALERT_MESSAGES.guestWin);
+    } else {
+        alert(ALERT_MESSAGES.tie);
+    }
+    console.log(alert);
 });
